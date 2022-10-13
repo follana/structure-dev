@@ -1,0 +1,93 @@
+/* ******************** HEADER ************************* */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    --color1: blue;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: aquamarine;
+    /* background-image: url('images/avatar.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%; */
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    /* color: var(--color1); */
+    text-align: center;
+    text-shadow: black 6px 6px 10px;
+    cursor: pointer;
+    /* transition: all 1.5s ease; */
+    /* animation: color-change 2s infinite alternate; */
+}
+
+/* @keyframes color-change{
+    0% { color: black; }
+    33% { color: red;transform: rotate(45deg);}
+    66% { color: yellow;transform: rotate(90deg);}
+    100% { color: pink; transform: rotate(135deg);
+    }
+} */
+
+h2:hover {
+    text-shadow: black 6px 6px 1px;
+    
+}
+
+.titreForm {
+    font-size: 50px;
+}
+
+#idTableau {
+    font-weight: bold;
+}
+
+.section1 p, .section1 div {
+    color: var(--color1)
+} 
+
+.section1 div {
+    border: 5px black solid;
+    border-radius: 25px;
+    background-color: blueviolet;
+height: 500px;
+width: 500px;
+
+
+}
+
+h1 {
+    background-color: bisque;
+}
+
+a {
+    font-size: 26px;
+    text-decoration: none;
+}
+a:visited {
+    color: brown;
+}
+a:hover {
+    color: darkgoldenrod;
+}
+a:active {
+    font-size: 50px;
+}
+
+input:focus {
+    background-color: red;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}

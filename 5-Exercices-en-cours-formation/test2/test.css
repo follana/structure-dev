@@ -1,0 +1,47 @@
+.bordure{
+    background-color: var(--color1);
+    color: var(--color2);
+    display: flex;
+    align-items: center;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    background-color: var(--colorbg);
+    border-radius: 25px;
+    margin-bottom: 10%;
+    color: var(--color2);
+  }
+
+  .pigeon {
+    border-radius: 25px;
+}
+.angrybird {
+    border-radius: 25px;
+}
+.penguin {
+    border-radius: 25px;
+}
+
+.img {
+    margin-top: 4%;
+    background-color: var(--color1);
+    height: 650px;
+    padding: 2%;
+    border-radius: 25px;
+    text-align: justify;
+    width: [width of img];
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 5px 10px #b4956d;
+    color: var(--color2);
+}

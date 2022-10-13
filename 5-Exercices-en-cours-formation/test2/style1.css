@@ -1,0 +1,94 @@
+body {
+    min-height: 100vh;
+    background-color: rgb(240, 205, 172);
+    margin:0;
+}
+
+H1{
+    text-align: center;
+    font-size: 50px;
+}
+/*config navbar */
+
+.navbar{ 
+    display:flex;
+    padding-block: 20px;
+    background-color: rgb(241, 167, 81);
+    border-color: rgb(241, 167, 81);
+    border-width: 10px; 
+    padding-left: 20px; 
+    padding-right:20px;
+} 
+
+.liens{
+    width:100%;
+    display:flex;
+    padding-left: 50px;
+    padding-right:50px;
+    justify-content: right;
+
+}
+a {
+    text-decoration: none;
+}
+.navContact {
+    padding-left: 40px;
+}
+.navGalerie {
+    padding-left: 40px;
+}
+
+
+
+/* config image, background et bloc div*/
+
+
+.bordure{
+    background-color: rgb(241, 167, 81);
+    display: flex;
+    flex: wrap;
+    justify-content:center;
+    border-radius: 20px;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    min-width: 500px;    
+}
+
+
+.divimage{
+    background-color: beige;
+    display: flex;
+    border-radius: 20px;
+    margin:10px;
+    padding: 20px;
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 0px 0px 10px black;
+}
+
+.ragdoll{
+    width: 300px;
+    height:300px;
+    object-fit: cover;
+}
+
+.siamois{
+    width:300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.european{
+    width:300px;
+    height:300px;
+    object-fit: cover;
+}
+
+.description {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+

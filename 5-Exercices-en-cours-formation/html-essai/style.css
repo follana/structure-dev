@@ -1,0 +1,36 @@
+
+/* header*/
+
+h1{
+    margin:50px green solid;
+    border:5px blue solid;
+    background-color:yellow ;
+    color:blue;
+}
+
+.titreForm{
+    font-size:50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section p{
+    color:red;
+}
+
+section ol{
+    font-size:30px;
+    text-align: center;
+}
+
+section table{
+    background-color:red;
+}
+    
+section form{
+    margin-bottom: 8px;
+    padding: 8px 14px;
+    border: 10px grey solid;
+    outline: none;
+    background-color: blueviolet;
+}
+

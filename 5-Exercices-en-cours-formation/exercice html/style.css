@@ -1,0 +1,48 @@
+
+body{
+    background-color:rgb(106, 170, 170);
+    border: 2 px black solid;
+}
+
+h1{
+    font-size:60px;
+    margin:30px rgb(211, 142, 39) solid;
+    border:5px blue solid;
+    background-color:yellow ;
+    color:blue;
+    animation:color-change 2s infinite alternate;
+}
+h2{
+    font-size:30px;
+    text-align: center;
+    border: 20px blue solid;
+    padding: 20px;
+}
+
+
+ @keyframes color-change{
+     0% {color: blue}
+     30%{color:red}
+     60%{color:green}
+     100%{color:black}
+    }
+
+
+p{
+    color:rgb(116, 4, 41);
+    font-weight: 100;
+
+}
+section table{
+    background-color: rgb(115, 115, 226);
+    text-emphasis-color: white;
+    text-align: center;
+}
+
+.les-listes{
+background-color: burlywood;
+text-align: center;
+border: 2px grey solid;
+}
+
+

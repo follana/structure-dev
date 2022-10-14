@@ -69,26 +69,30 @@ a {
 }
 
 .ragdoll{
-    width: 300px;
-    height:300px;
+    width: 250px;
+    height:250px;
     object-fit: cover;
+    justify-self: center;
 }
 
 .siamois{
-    width:300px;
-    height: 300px;
+    width:250px;
+    height: 250px;
     object-fit: cover;
+    justify-self: center;
 }
 
 .european{
-    width:300px;
-    height:300px;
+    width:250px;
+    height:250px;
     object-fit: cover;
+    justify-self: center;
 }
 
 .description {
     max-width: 300px;
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 

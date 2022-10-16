@@ -59,11 +59,13 @@ a {
 .divimage{
     background-color: beige;
     display: flex;
+    flex-direction: column;
     border-radius: 20px;
     margin:10px;
     padding: 20px;
     width: 350px;
     height: 500px;
+    align-items: center;
     text-align: center;
     box-shadow: 0px 0px 10px black;
 }
@@ -96,3 +98,29 @@ a {
     align-self: center;
 }
 
+/*footer*/
+
+.retour-haut{
+    display:flex;
+    padding-block: 20px;
+    background-color: rgb(241, 167, 81);
+    border-color: rgb(241, 167, 81);
+    border-width: 10px; 
+    padding-left: 20px; 
+    padding-right:20px;
+    border-bottom: 1px black solid;
+    flex-direction: column;
+    align-items: center;
+}
+.liens-du-bas{
+    display: flex;
+    padding-block: 20px;
+    background-color: rgb(241, 167, 81);
+    border-color: rgb(241, 167, 81);
+    flex-direction: row;  
+    justify-content:center;
+}
+
+.retour{
+    padding-left: 20px;
+}

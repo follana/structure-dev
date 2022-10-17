@@ -91,12 +91,6 @@ a {
     margin-top: 0%;
 }
 
-.transferable{
-    font-size: 15px;
-    margin-bottom: 0%;
-    margin-top: 0%;
-}
-
 .formation{
     display:flex;
     background-color: darkcyan;
@@ -164,4 +158,41 @@ a {
 
 
 /****************************PORTFOLIO**************************/
+
+.galerie-photo{
+    display:flex;
+    background-color: darkblue;
+    width: 100%;
+    height:70%;
+    border-radius:20px;
+    margin-top: 20px;
+    padding: 15px; 
+}
+
+.resize{
+    width: 250px;
+    height:250px;
+    object-fit: cover;
+    justify-self: center;
+}
+
+@media(max-width:780px){
+    .galerie-photo{
+        display:flex;
+        background-color: darkblue;
+        width: 100%;
+        height:70%;
+        border-radius:20px;
+        margin-top: 20px;
+        padding: 15px; 
+        flex-wrap:wrap;
+        flex-direction:column;
+    }
+
+    .resize{
+        width: 150px;
+        height:150px;
+        object-fit: cover;
+    }
+}
 

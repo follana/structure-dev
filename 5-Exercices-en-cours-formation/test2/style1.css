@@ -151,7 +151,14 @@ a {
     flex-direction: column;
 }
 
+.espace{
+    height: 200px;
+}
+
 .inputdata{
     width:100%;
-    margin-top: 40px;
+    margin-bottom: 40px;
 }
+/**********************  GALERIE ***********************************************/
+
+

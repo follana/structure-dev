@@ -1,0 +1,207 @@
+/***************** GENERAL *******************/
+
+body {
+    margin: 0;
+    min-height: 100vh; 
+    /* 
+    min-height: 100vh me sert surtout lors de la construction de la page quand il n'y a pas suffisamment de contenu. 
+    Quand il y a suffisamment de contenu, pas besoin de mettre de "height" au body.
+    */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/*********************** NAV - HEADER **********************/
+
+nav {
+    width: 100%;
+    background-color: burlywood;
+    padding: 10px 0 13px 0;
+    margin-bottom: 50px;
+    box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.66);
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    padding: 5px 10px;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+a:hover {
+    color: brown;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(73, 28, 28);
+}
+
+/*********************** MAIN - HOMEPAGE ***********************/
+
+main {
+    margin: 60px auto;
+    padding: 30px;
+    width: 80%;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 14px;
+}
+
+.cards {
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin: 0 9px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.66);
+}
+
+div p {
+    text-align: center;
+    margin: 0;
+    color: rgb(107, 51, 51);
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    border-bottom: 1px burlywood solid;
+    padding:0 30px 20px 30px;
+    width: 70%;
+    text-align: center;
+    color: rgb(73, 28, 28);
+}
+
+/************************ GALLERY ***********************/
+
+.mainGalerie {
+    margin: 60px auto;
+    padding: 30px;
+    width: 80%;
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 14px;
+}
+
+.mainGalerie img {
+    margin-bottom: 15px;
+}
+
+.mainGalerie img:nth-child(3n+2) {
+    flex: 1;
+}
+/*
+Ici la pseudo-class "nth-child(3n+2)" me permet de selectionner certaines ".mainGalerie img".
+Dans mon cas j'utilise "3n+2" ce qui veut dire, à partir de la 2ème image, j'applique du css toutes les 3 images.
+Donc la 2ème image puis, toutes les 3 images, la propriété "flex" sera appliqué.
+*/
+
+/****************** FORM ************************/
+
+.mainForm {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: blanchedalmond;
+    padding: 20px 20px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.66);
+    width: 80%;
+}
+
+.divForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 95%;
+}
+
+textarea {
+    resize: none; /*"resize: none" empèche de redimensionner mon "textarea" à la souris directement sur la page du site*/
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 95%;
+}
+
+button {
+    cursor: pointer; /*ça c'est juste pour faire croire que c'est un bouton fonctionnel...*/
+}
+
+label {
+    color: rgb(107, 51, 51);
+}
+
+/******************* FOOTER *******************/
+
+footer {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divFooter {
+    padding: 20px 80px;
+    font-size: 20px;
+}
+
+.divFooter:nth-child(1) {
+    border-bottom: 1px whitesmoke solid;
+}
+/*Ici "nth-child(1)" me permet de sélectionner seulement le premier ".divFooter"*/
+
+.divFooter a {
+    padding: 0 20px;
+}
+
+/*
+Ici vous remarquerez que les liens "Accueil / Galerie / Contact" ne sont pas gérés avec du Flexbox.
+Dans ce cas les balises <a> s'alignaient de base alors je les ai simplement enfermé dans une div pour empècher la propriété
+"flex-direction: column" de leur "container" de changer leur comportement, afin qu'elles restent en ligne.
+*/

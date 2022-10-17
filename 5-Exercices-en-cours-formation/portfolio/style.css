@@ -87,6 +87,14 @@ a {
 
 .compétences{
     font-size: 15px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.transferable{
+    font-size: 15px;
+    margin-bottom: 0%;
+    margin-top: 0%;
 }
 
 .formation{
@@ -113,3 +121,10 @@ a {
 .expériences{
     background-color: deepskyblue;
 }
+
+.titremédian{
+    font-size:15px;
+}
+
+
+

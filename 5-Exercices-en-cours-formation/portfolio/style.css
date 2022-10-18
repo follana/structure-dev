@@ -4,8 +4,8 @@
 .navbar{ 
     display:flex;
     padding-block: 20px;
-    background-color:deepskyblue;
-    border-color: rgb(62, 203, 238);
+    background-color:rgb(167, 101, 253);
+    border-color: rgb(167, 101, 253);
     border-width: 10px; 
     padding-left: 20px; 
     padding-right:20px;
@@ -47,7 +47,7 @@ a {
 }
 
 .presentation{
-    background-color:darkcyan;
+    background-color:rgb(211, 170, 238);
     flex:wrap;
     width:100%;
     height: 380px;
@@ -73,7 +73,7 @@ a {
 
 @media(max-width:920px){
     .presentation{
-        background-color:darkcyan;
+        background-color:rgb(211, 170, 238);
         flex:wrap;
         width:100%;
         height: 500px;
@@ -82,7 +82,7 @@ a {
 
 @media(max-width:430px){
     .presentation{
-        background-color:darkcyan;
+        background-color:rgb(211, 170, 238);
         width:100%;
         height: 500px;
         display: flex;
@@ -93,7 +93,7 @@ a {
 
     @media(max-width:270px){
         .presentation{
-            background-color:darkcyan;
+            background-color:rgb(211, 170, 238);
             flex:wrap;
             width:100%;
             height: 600px;
@@ -111,7 +111,7 @@ a {
     display:flex;
     flex-flow: column wrap;
     align-items: center;
-    background-color:deepskyblue;
+    background-color:rgb(167, 101, 253);
     margin-left: 300px;
     margin-right: 300px;
 }
@@ -124,7 +124,7 @@ a {
 
 .formation{
     display:flex;
-    background-color: darkcyan;
+    background-color: rgb(211, 170, 238);
     width:100%;
     justify-items: center;
     margin: bottom 5px;
@@ -146,7 +146,7 @@ a {
 @media(max-width:630px){
     .formation{
         display:flex;
-        background-color: darkcyan;
+        background-color: rgb(211, 170, 238);
         width:100%;
         justify-items: center;
         margin: bottom 5px;
@@ -155,7 +155,7 @@ a {
 }
 
 .expériences{
-    background-color: deepskyblue;
+    background-color: rgb(167, 101, 253);
 }
 
 .titremédian{
@@ -233,7 +233,7 @@ a {
 
 .galerie-photo{
     display:flex;
-    background-color: darkblue;
+    background-color: rgb(89, 89, 241);
     width: max-content;
     height:70%;
     border-radius:20px;

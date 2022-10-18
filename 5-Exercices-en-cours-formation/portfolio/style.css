@@ -226,7 +226,7 @@ a {
 .galerie-photo{
     display:flex;
     background-color: darkblue;
-    width: 80%;
+    width: max-content;
     height:70%;
     border-radius:20px;
     margin-top: 20px;
@@ -268,11 +268,11 @@ a {
 }
 
 
-@media(max-width:1495px){
+@media(max-width:1500px){
     .galerie-photo{
         display:flex;
         background-color: darkblue;
-        width: 80%;
+        width: 100%;
         height:70%;
         border-radius:20px;
         margin-top: 20px;

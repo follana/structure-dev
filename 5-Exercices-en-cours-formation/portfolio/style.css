@@ -65,6 +65,13 @@ a {
     margin-top:10px;
 }
 
+.ima-id:hover{
+    cursor:pointer;
+    width: 275px;
+    border:solid;
+    border-color:black;
+}
+
 
 .descriptif{
     font-size: 20px;

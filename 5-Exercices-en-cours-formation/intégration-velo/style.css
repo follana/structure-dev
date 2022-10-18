@@ -1,0 +1,82 @@
+.navbar{
+    display: flex;
+    width:100%;
+    height:300px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.img-top{
+    display:flex;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    justify-self: center;
+    opacity: 0.5;
+}
+
+.symbols{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.titre{
+    display: flex;
+    width:100%;
+    height: 30px;
+    margin: 5px;
+    margin-bottom:20px ;
+    justify-content:center;
+}
+p{
+    text-align: center;
+    padding-top: 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+input{
+    display:flex;
+    width: 400px;
+    align-self: center;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.velo{
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    opacity: 0.5;
+}
+
+footer{
+    display:flex;
+    width:100%;
+    height:60 px;
+    border-top:solid;
+    border-color:grey;
+    justify-content: center;
+    
+}
+
+button{
+    display: flex;
+    width: 100px;
+    height:50px;
+    background-color: white;
+    border-color: grey;
+    padding-top: 15px;
+    padding-left: 25px;
+    margin-top: 10px;
+}

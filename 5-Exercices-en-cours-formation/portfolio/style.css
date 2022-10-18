@@ -83,7 +83,6 @@ a {
 @media(max-width:430px){
     .presentation{
         background-color:darkcyan;
-        flex:wrap;
         width:100%;
         height: 500px;
         display: flex;
@@ -189,6 +188,11 @@ a {
     text-align: center;
     width:100%;
     margin-bottom: 40px;
+}
+
+.buttonsend{
+    width:80px;
+    height:50px;
 }
 
 #scroll_to_top {

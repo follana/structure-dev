@@ -114,6 +114,7 @@ a {
     background-color:rgb(167, 101, 253);
     margin-left: 300px;
     margin-right: 300px;
+    margin-top:10px;
 }
 
 .compétences{
@@ -128,6 +129,8 @@ a {
     width:100%;
     justify-items: center;
     margin: bottom 5px;
+    padding:5px;
+    margin-top:10px;
 }
 
 .diplomes{
@@ -140,6 +143,7 @@ a {
         flex-direction: column;
         align-items: center;
         margin:auto;
+        margin-top:10px;
     }
 }
 
@@ -151,11 +155,15 @@ a {
         justify-items: center;
         margin: bottom 5px;
         flex-wrap:wrap;
+        margin-top:10px;
     }
 }
 
 .expériences{
     background-color: rgb(167, 101, 253);
+    border-radius: 5%;
+    padding:5px;
+    margin-top: 10px;
 }
 
 .titremédian{

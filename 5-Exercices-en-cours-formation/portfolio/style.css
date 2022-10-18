@@ -110,7 +110,7 @@ a {
 /*****************CORPS CV********************/
 .compétence-en-cours{
     display:flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: center;
     background-color:deepskyblue;
     margin-left: 300px;
@@ -135,7 +135,7 @@ a {
     display:flex
 }
 
-@media(max-width:730px){
+@media(max-width:825px){
     .compétence-en-cours{
         display:flex;
         flex-direction: column;
@@ -215,20 +215,52 @@ a {
 .galerie-photo{
     display:flex;
     background-color: darkblue;
-    width: 100%;
+    width: 80%;
     height:70%;
     border-radius:20px;
     margin-top: 20px;
     padding: 15px; 
+ 
 }
 
 .resize{
     width: 250px;
     height:250px;
     object-fit: cover;
-    justify-self: center;
+    justify-self: space-around;
     margin:20px;
 }
+.titre{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+@media(max-width:1495px){
+    .galerie-photo{
+        display:flex;
+        background-color: darkblue;
+        width: 80%;
+        height:70%;
+        border-radius:20px;
+        margin-top: 20px;
+        padding: 15px; 
+        flex-flow: row wrap;
+     
+    }
+    
+    .resize{
+        display:flex;
+        width: 250px;
+        height:250px;
+        object-fit: cover;
+        justify-self: space-around;
+        margin:20px;
+    }
+}
+
+
 
 @media(max-width:780px){
     .galerie-photo{
@@ -239,8 +271,7 @@ a {
         border-radius:20px;
         margin-top: 20px;
         padding: 15px; 
-        flex-wrap:wrap;
-        flex-direction:column;
+        flex-flow: row wrap;
     }
 
     .resize{

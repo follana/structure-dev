@@ -191,6 +191,17 @@ a {
     margin-bottom: 40px;
 }
 
+#scroll_to_top {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    right: 30px;
+  }
+  #scroll_to_top img {
+    width: 40px;
+  }
+
 .espace{
     height:50px;
 }

@@ -18,6 +18,7 @@
     display: flex;
     width: 100%;
     justify-content: flex-end;
+    opacity: 0.5;
 }
 
 .titre{
@@ -27,6 +28,9 @@
     margin: 5px;
     margin-bottom:20px ;
     justify-content:center;
+    font-family: 'Alkalami', serif;
+    font-family: 'Lato', sans-serif;
+    font-style:bold;
 }
 p{
     text-align: center;
@@ -51,6 +55,8 @@ section{
     display:flex;
     flex-direction: column;
     justify-content: center; 
+    font-family: 'Alkalami', serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .velo{

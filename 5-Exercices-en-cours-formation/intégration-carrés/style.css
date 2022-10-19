@@ -82,6 +82,11 @@
     padding-right: 200px;
 }
 
+table {
+    border-spacing: 0px;
+    border-width: 0px;
+}
+
 .td4{
     background-color: black;
     color: white;

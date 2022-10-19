@@ -50,7 +50,7 @@
 }
 
 .shape {
-    width: 125px;
+    width: 100px;
     height: 50px;
     transform: skew(-20deg) rotate(-2deg);
     background: #991b1b;

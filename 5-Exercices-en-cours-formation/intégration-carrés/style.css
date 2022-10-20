@@ -26,12 +26,16 @@
     margin-left: 120px;
     color:white;
     text-decoration: none;
+    font-family: 'Alkalami', serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .article-top{
     display:flex;
     color:white;
     text-decoration: none;
+    font-family: 'Alkalami', serif;
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -41,12 +45,16 @@
     text-align: center;
     margin-right:10px;
     font-size: 20px;
+    font-family: 'Alkalami', serif;
+    font-family: 'Lato', sans-serif;
 }
 /****************************************NAVBAR*************************************************/
 .bienvenu{
     display:flex;
     font-size: 25px;
     justify-content: center;
+    font-family: 'Alkalami', serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .shape {
@@ -68,11 +76,15 @@
     color: white;
     flex-direction:row;
     justify-content: center;
-    font-size: 50px;  
+    font-size: 50px;
+    font-family: 'Alkalami', serif;
+    font-family: 'Lato', sans-serif;  
 }
 
 .h1{
     display:flex;
+    font-family: 'Alkalami', serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .images{
@@ -91,6 +103,8 @@
     margin-top:10px;
     padding-left: 200px;
     padding-right: 200px;
+    font-family: 'Alkalami', serif;
+    font-family: 'Lato', sans-serif;
 }
 
 table {

@@ -68,3 +68,46 @@ bouton: 2 méthodes.
 <input type= "submit" value="envoyer">
 
 
+/**********************************************grid***************************************************/
+
+
+grid-colum-start: défini la position de départ d'un élément de la grille sur la colonne (on compte en ligne avant la case)
+ajout
+grid-colum-end: etale jusqu'au nombre donné
+ peuvent être défini en nombre négatif en suivant la même logique de comptage
+
+ span: défini la largeur depuis le début ou la fin ne pas oublier le /
+ grid-column: raccourcis comprend 2 valeurs (grid-column: 2 / 4; définira l'élément de la grille à partir de la 2ème ligne verticale de la grille et se terminera à la 4ème ligne de la grille.)
+
+ grid-row-start: grid-row-start fonctionne de façon similaire à grid-column-start mais sur l'axe vertical.
+ grid-row: 3/6
+
+ Si taper à la fois grid-column et grid-row est trop long pour vous, il y a encore un raccourci pour cela. grid-area accepte quatre valeurs séparées par des slashes : grid-row-start, grid-column-start, grid-row-end, suivies par grid-column-end.
+
+Un exemple de cela seraitgrid-area: 1 / 1 / 3 / 6;.
+
+Si les éléments de la grille ne sont pas explicitement positionnés avec grid-area, grid-column, grid-row, etc., ils sont automatiquement positionnés selon leur ordre dans le code source. Nous pouvons remplacer ceci en utilisant la propriété order, c'est l'un des avantages de la grille par rapport à la mise en page basée sur une table.
+
+Par défaut, tous les éléments de la grille ont order à 0, mais cela peut être défini sur n'importe quelle valeur positive ou négative, c'est similaire à z-index.
+
+Jusqu'à présent, vous aviez mis votre jardin dans une grille avec cinq colonnes, chacune ayant une largeur de 20%, et cinq lignes, chacune ayant une hauteur de 20%.
+
+Cela a été fait avec les règles grid-template-columns: 20% 20% 20% 20% 20%; et grid-template-rows: 20% 20% 20% 20% 20%; Chaque règle comporte cinq valeurs qui créent cinq colonnes, chacune correspond à 20% de la largeur totale du jardin.
+
+Mais vous pouvez configurer la grille comme vous le souhaitez. Donnez une nouvelle valeur à grid-template-columns pour arroser vos carottes. Vous devez définir la largeur de la 1ère colonne à 50%.
+
+Le fait de spécifier un ensemble de colonnes avec des largeurs identiques peut devenir fastidieux. Heureusement, il y a une fonction repeat pour nous aider.
+
+Par exemple, nous avons défini précédemment cinq colonnes de 20% avec la règle grid-template-columns: 20% 20% 20% 20% 20%;. Ceci peut être simplifié ainsi grid-template-columns: repeat(5, 20%);
+
+A l'aide de grid-template-columns avec la fonction repeat, créez huit colonnes avec chacune une largeur de 12.5%. De cette façon, vous ne sur-arrosez pas votre jardin.
+
+
+grid-template-columns n'accepte pas seulement les valeurs en pourcentage, mais aussi les unités de longueur comme pixels et ems. Vous pouvez même mélanger différentes unités.
+
+Ici, définissez respectivement trois colonnes à 100px, 3em et 40%. (ne pas mettre de ,)
+
+grid-template est la propriété raccourcie qui combine grid-template-rows et grid-template-columns.
+Par exemple, grid-template: 50% 50% / 200px; créera une grille avec 2 lignes de 50% de hauteur chacune et une colonne de 200 pixels de large.
+
+

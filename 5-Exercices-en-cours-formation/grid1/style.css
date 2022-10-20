@@ -1,0 +1,113 @@
+/******************création de la grid****************/
+.grid{
+    display:grid;
+    grid-template-columns: repeat(4,auto) ;
+    grid-template-rows:repeat(2,auto) ;
+    gap:20px;
+    padding:5px;
+    margin:5px;
+}
+/**********Daniel**************/
+.item:nth-child(1){
+    display: flex;
+    flex-flow: row wrap;
+    background-color:purple;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 5%;
+}
+
+.daniel{
+    display: flex;
+    align-self: center;
+    border-radius: 50%;
+}
+/**********Jonathan******************/
+
+.item:nth-child(2){
+    background-color:grey;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border-radius: 5%;
+}
+
+.jonathan{
+    display: flex;
+    align-self: center;
+    border-radius: 50%;
+}
+/**********Jeannette******************/
+.item:nth-child(3){
+    background-color:white;
+    grid-row-start: 2; 
+    grid-column-end: 2;
+    border-radius: 5%;
+}
+
+.jeannette{
+    display: flex;
+    align-self: center;
+    border-radius: 50%;
+}
+/**********Patrick*****************/
+.item:nth-child(4){
+    background-color:darkblue; 
+    color:white;
+    grid-row-start: 2;
+    grid-column-end: 4; 
+    border-radius: 5%;
+}
+
+.patrick{
+    display: flex;
+    align-self: center;
+    border-radius: 50%;
+}
+/**********Kira*****************/
+.item:nth-child(5){
+    background-color:white;
+    grid-column-start: 4;
+    grid-column-end: 5; 
+    grid-row-start:1;
+    grid-row-end: 3;
+    border-radius: 5%;
+}
+
+.kira{
+    display: flex;
+    align-self: center;
+    border-radius: 50%;
+}
+/**********Contenu écrit******************/
+.name{
+    display: flex;
+    width:100%;
+    justify-content:flex-start;
+    margin-left:70px;
+    margin-bottom: 0px;
+    font-size:20px;
+}
+
+.poste{
+    display: flex;
+    width:100%;
+    justify-content:flex-start;
+    margin-left:70px;
+    margin-top:0px;
+}
+
+.discours{
+    display: flex;
+    width:80%;
+    font-size: 18px;
+   
+}
+
+.discours-petit{
+    display: flex;
+    width:80%;
+    margin-top: 15px; 
+    font-size:13px;
+    
+}
+/*********************************/

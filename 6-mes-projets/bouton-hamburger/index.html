@@ -8,6 +8,28 @@
     <title>bouton hamburger</title>
 </head>
 <body>
+   <button class="btn">
+        <div class="spin-container">
+            <div class="front">
+                <div class="bar b1"></div>
+                <div class="bar b2"></div>
+                <div class="bar b3"></div>
+            </div>
+            <div class="back">
+                <div class="bar b-back1"></div>
+                <div class="bar b-back2"></div>
+            </div>
+        </div>
+   </button> 
+
+   <script>
+        const btn= document.querySelector('.btn');
+        const spinContainer = document.querySelector('.spin-container')
+
+        btn.addEventListener('clik', ()=>{
+            spinContainer.classList.toggle('active')
+        })
+   </script>
     
 </body>
 </html>

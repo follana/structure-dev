@@ -1,0 +1,37 @@
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+.forme-violette{
+    width: 600px;
+    height: 850px;
+    background:linear-gradient(rgb(192, 68, 242),rgb(134, 49, 243) );
+    border-bottom-left-radius: 300px; 
+    border-bottom-right-radius: 300px;
+    position: absolute;
+    align-items: flex-start;
+    left: -10%;
+    z-index: -1;
+}
+.forme-rose{
+    width: 600px;
+    height: 850px;
+    background-color:rgb(255, 227, 246);
+    border-top-left-radius: 300px; 
+    border-top-right-radius: 300px;
+    position: absolute;
+    align-self: flex-end;
+    right: -10%;
+    bottom: 0;
+    z-index: -1;
+}
+
+.text-bloc{
+    display:flex;
+    flex-flow: column wrap;
+    text-align: flex-start;
+    width:500px;
+    padding:10px;
+    margin:auto;
+}

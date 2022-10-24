@@ -1,18 +1,21 @@
 
 body{
+    display:flex;
     margin: 0;
     overflow: hidden;
+    align-items: center;
 }
 .forme-violette{
     width: 600px;
     height: 850px;
     background:linear-gradient(rgb(192, 68, 242),rgb(134, 49, 243) );
+    margin-top:30%;
     border-bottom-left-radius: 300px; 
     border-bottom-right-radius: 300px;
     position: absolute;
     align-items: flex-start;
     left: -10%;
-    z-index: -1;
+    z-index: -2;
 }
 .forme-rose{
     width: 600px;
@@ -24,14 +27,56 @@ body{
     align-self: flex-end;
     right: -10%;
     bottom: 0;
-    z-index: -1;
+    z-index: -2;
 }
 
-.text-bloc{
+.phone{
+    width:300px;
+    height:600px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left:250px;
+    box-shadow:10px 10px 30px lightgrey;
+    margin-top: 50%;
+    z-index:-1;
+    position: absolute;
+}
+
+.écran{
+    width:280px;
+    height:480px;
+    background-color: lightgrey;
+    border-radius:15px;
+    margin-left:11px;
+    margin-top:0px;
+    z-index:0;
+    position:absolute;
+}
+
+.encoche{
+    width:150px;
+    height:40px;
+    background-color: white;
+    border-radius: 15px;
+    z-index:1;
+    margin-left:75px;
+    position:absolute;
+}
+
+.template{
+    width:280px;
+    height:100px;
+    background:linear-gradient(rgb(192, 68, 242),rgb(134, 49, 243) );
+    z-index:0;
+    margin-top: 10px;
+    margin-left:10px;
+    border-radius: 15px;
+}
+
+ .text-bloc{ 
     display:flex;
     flex-flow: column wrap;
     text-align: flex-start;
     width:500px;
     padding:10px;
-    margin:auto;
 }

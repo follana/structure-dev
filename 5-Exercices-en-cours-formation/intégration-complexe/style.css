@@ -1,0 +1,106 @@
+body{
+    background-color: lightgrey;
+}
+
+
+.box-tête{
+    display:flex;
+    flex-flow: column wrap;
+    text-align: center;
+    width:500px;
+    padding:10px;
+    margin:auto;
+}
+
+.t1{
+    font-weight: 100;
+}
+.t2{
+    font-weight: 600;
+}
+
+.describe{
+    opacity:0.5
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(2.5,1fr);
+    gap: 40px;
+    grid-template-areas: 
+    /* ".title." */
+    ".builder."
+    "supervisor builder calculator"
+    "supervisor karma calculator"
+    ".karma.";
+    /* margin: 250px; */
+    row-gap: 150px;
+    margin-top: 5%;
+}
+
+.images{
+    width:70px;
+    align-self: flex-end;
+    margin-right:10px;
+}
+
+.item:nth-child(1){ /*supervisor:à gauche*/
+    grid-area: supervisor;
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    box-shadow:10px 10px 30px grey;
+    border:solid;
+    border-top-color:cyan;
+    border-bottom: none;
+    border-left:none;
+    border-right:none;
+    padding:10px;
+    margin-left: 10px;
+}
+
+.item:nth-child(2){ /*builder: en haut*/
+    grid-area: builder;
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    box-shadow:10px 10px 30px grey;
+    border:solid;
+    border-top-color:crimson;
+    border-bottom: none;
+    border-left:none;
+    border-right:none;
+    margin-left: 10px;
+    padding:10px;
+}
+
+.item:nth-child(3){/*karma: en bas*/
+    grid-area: karma;
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    box-shadow:10px 10px 30px grey;
+    border:solid;
+    border-top-color:yellow;
+    border-bottom: none;
+    border-left:none;
+    border-right:none;
+    margin-left: 10px;
+    padding:10px;
+}
+
+.item:nth-child(4){/*calculator: à droite*/
+    grid-area: calculator;
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    box-shadow:10px 10px 30px grey;
+    border:solid;
+    border-top-color:blue;
+    border-bottom: none;
+    border-left:none;
+    border-right:none;
+    margin-left: 10px;
+    padding:10px;
+}

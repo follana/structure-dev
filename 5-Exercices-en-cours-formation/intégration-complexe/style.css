@@ -104,3 +104,45 @@ body{
     margin-left: 10px;
     padding:10px;
 }
+
+@media(max-width:650px){
+    .grid{
+        display: grid;
+        grid-template-columns:repeat(3, auto);
+        grid-template-rows:repeat(2.5,auto);
+        gap: 20px;
+        grid-template-areas:
+          "supervisor"
+          "builder"
+          "karma"
+          "calculator";
+        margin-top: 5%;
+        
+    }
+}
+
+@media(max-width:540px){
+    .box-tête{
+        display:flex;
+        flex-flow: column wrap;
+        text-align: center;
+        width:100%;
+        padding:10px;
+        margin:auto;
+    }
+    
+    .t1{
+        font-weight: 100;
+        font-size:40px;
+    }
+    .t2{
+        font-weight: 600;
+        font-size:40px;
+    }
+    
+    .describe{
+        font-size:20px;
+        opacity:0.5
+    }
+    
+}

@@ -1,27 +1,80 @@
+
+body{
+    background-color: lightgray;
+}
 /******************création de la grid****************/
 .grid{
     display:grid;
-    grid-template-columns: repeat(4,300px) ;
-    grid-template-rows:repeat(2,400px) ;
+    grid-template-columns: repeat(4,minmax(300px,1fr)) ;
+    grid-template-rows:repeat(2,minmax(400px,1fr)) ;
     gap:20px;
     padding:5px;
     margin:5px;
 }
+
+@media (max-width:1300px) {
+    .grid{
+        display:grid;
+        grid-template-columns: repeat(4,minmax(100,1fr)) ;
+        grid-template-rows:repeat(2,minmax(400px,2fr)) ;
+        gap:20px;
+        padding:5px;
+        margin:5px;
+    }
+}
+
+@media(max-width:1200px){
+    .grid{
+        display:grid;
+        grid-template-columns: repeat(4,minmax(100,1fr)) ;
+        grid-template-rows:repeat(2,minmax(400px,2fr)) ;
+        gap:10px;
+        padding:5px;
+        margin:5px;
+    }
+
+    .item:nth-child(1){
+        display: flex;
+         flex-direction:column; 
+        background-color:purple;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-radius: 5%;
+        padding:15px;
+    }
+
+    .discours{  
+        font-size: 18px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    
+    .discours-petit{
+        margin-top: 15px; 
+        font-size:13px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    
+}
 /**********Daniel**************/
 .item:nth-child(1){
     display: flex;
-    flex-flow: row wrap;
+    flex-direction:column;
     background-color:purple;
     grid-column-start: 1;
     grid-column-end: 3;
     border-radius: 5%;
+    padding:15px;
 }
 
-.daniel{
-    display: flex;
-    align-self: center;
+.images{
+    align-self:flex-start;
     border-radius: 50%;
+    width:50px;
+    margin-top: 15px;
 }
+
 /**********Jonathan******************/
 
 .item:nth-child(2){
@@ -31,11 +84,8 @@
     border-radius: 5%;
 }
 
-.jonathan{
-    display: flex;
-    align-self: center;
-    border-radius: 50%;
-}
+
+
 /**********Jeannette******************/
 .item:nth-child(3){
     background-color:white;
@@ -44,11 +94,7 @@
     border-radius: 5%;
 }
 
-.jeannette{
-    display: flex;
-    align-self: center;
-    border-radius: 50%;
-}
+
 /**********Patrick*****************/
 .item:nth-child(4){
     background-color:darkblue; 
@@ -60,11 +106,6 @@
     border-radius: 5%;
 }
 
-.patrick{
-    display: flex;
-    align-self: center;
-    border-radius: 50%;
-}
 /**********Kira*****************/
 .item:nth-child(5){
     background-color:white;
@@ -75,43 +116,28 @@
     border-radius: 5%;
 }
 
-.kira{
-    display: flex;
-    align-self: center;
-    border-radius: 50%;
-}
 /**********Contenu écrit******************/
 .name{
-    display: flex;
-    width:100%;
-    justify-content:flex-start;
-    margin-left:70px;
-    margin-bottom: 0px;
+    margin-left: 55px;
     font-size:20px;
 }
 
 .poste{
-    display: flex;
-    width:100%;
-    justify-content:flex-start;
-    margin-left:70px;
-    margin-top:0px;
+    margin-left: 55px;
 }
 
-.discours{
-    display: flex;
-    width:100%;
+.discours{  
     font-size: 18px;
-    margin-left:20px;
-    margin-right:20px;
+    margin-left: 10px;
+    margin-right:10px;
 }
 
 .discours-petit{
-    display: flex;
-    width:100%;
+  
     margin-top: 15px; 
     font-size:13px;
-    margin-left:20px;
-    margin-right:20px;
+    margin-left: 10px;
+    margin-right:10px;
+
 }
-/*********************************/
+/**********************************/

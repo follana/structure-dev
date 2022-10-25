@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Bootstrap initiation</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">Navbar</a>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class="container d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+            <img src="the-good-dinosaur-disney-movie-storybook.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Le voyage d'Arlo</h5>
+              <p class="card-text">Encore un exemple de film oublié de Disney, à tort! Vous rêviez d'un animal de compagnie faites comme ce dinosaure et adoptez un humain, il n'est pas très propre mais il s'accroche aux branches de l'évolution.</p>
+              <a href="https://encrypted-tbn2.gstatic.com/faviconV2?url=https://kobo.com&client=VFE&size=32&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    
+
+          <div class="card" style="width: 18rem;">
+            <img src="rebelle.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rebelle</h5>
+              <p class="card-text">Encore une ado rebelle qui n'écoute pas ses parents, traine en forêt discute avec des inconnus et voilà la catastrophe elle transforme sa mère en ours.</p>
+              <a href="https://www.google.fr/url?sa=i&url=https%3A%2F%2Fwww.senscritique.com%2Fliste%2Fwalt_disney_pixar_dreamworks%2F421012&psig=AOvVaw3SfBO-RcDtYP45r8KsaV36&ust=1666776859013000&source=images&cd=vfe&ved=0CA8Q3YkBahcKEwi489etmfv6AhUAAAAAHQAAAAAQGQ" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    
+          <div class="card" style="width: 18rem;">
+            <img src="aladin2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Aladin</h5>
+              <p class="card-text">Ou quand un Disney t'apprend qu'aller à l'école ne sert à rien. Deviens voleur kidnappe la fille d'un type important et devient roi des voleurs! Tout se perd...</p>
+              <a href="https://www.google.fr/url?sa=i&url=https%3A%2F%2Fwww.radiofrance.fr%2Fmouv%2Fpeter-pan-aladdin-interdits-aux-enfants-sur-disney-4441114&psig=AOvVaw3SfBO-RcDtYP45r8KsaV36&ust=1666776859013000&source=images&cd=vfe&ved=0CA8Q3YkBahcKEwi489etmfv6AhUAAAAAHQAAAAAQHg" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+
+
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="chateau.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Walt_Disney_Animation.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="disney-logo.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      
+    <footer>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              The current link item
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+            <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+            <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+            <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+          </div>
+    </footer>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

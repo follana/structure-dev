@@ -49,7 +49,7 @@ body{
     border-radius:15px;
     margin-left:11px;
     margin-top:0px;
-    z-index:0;
+    z-index:-1;
     position:absolute;
 }
 
@@ -64,19 +64,85 @@ body{
 }
 
 .template{
+    display: flex;
     width:280px;
     height:100px;
     background:linear-gradient(rgb(192, 68, 242),rgb(134, 49, 243) );
-    z-index:0;
+    z-index:-1;
     margin-top: 10px;
     margin-left:10px;
     border-radius: 15px;
 }
 
- .text-bloc{ 
+.avatar{
+    width:40px;
+    border-radius:50%;
+    margin-top:55px;
+    border:solid;
+    border-color:white;
+}
+
+.chevron{
+    width:50px;
+    height:40px;
+    margin-top:55px;
+}
+
+.name{
+    font-weight:600;
+    align-self: center;
+}
+
+.dispo{
+    align-self: center;
+}
+
+.texto{
+    width:65%;
+    height:55px;
+    background-color:rgb(205, 142, 241);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size:13px;
+    text-align: flex-start;
+}
+
+.content{
+    margin-left: 10px;
+}
+
+.puppy{
+    display:flex;
+    width:50px;
+    height:50px;
+    margin-top:15px; 
+}
+
+.chien{
+    border-radius:15px;
+}
+
+.proprio{
+    width:65%;
+    height:45px;
+    background-color:rgb(205, 142, 241);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size:13px;
+}
+
+.message{
+    text-align: end;
+    margin-right:10px;
+}
+
+ /* .text-bloc{  
     display:flex;
     flex-flow: column wrap;
     text-align: flex-start;
+    align-items:center;
     width:500px;
     padding:10px;
-}
+}*/

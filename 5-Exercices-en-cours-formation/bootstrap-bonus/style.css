@@ -14,12 +14,16 @@
     display:block;
 }
 
-@media(min-width:100px){
+.card{
+    margin-left: 5px;
+}
+
+@media(max-width:1000px){
     .gros{
         display:block;
     }
     
     .long{
         display:none;
-    }   
+    } 
 }

@@ -18,6 +18,16 @@
     margin-left: 5px;
 }
 
+.droite{
+    background-color: darkblue;
+    color:white;
+}
+
+.new{
+    color:goldenrod;
+}
+
+
 @media(max-width:1000px){
     .gros{
         display:block;

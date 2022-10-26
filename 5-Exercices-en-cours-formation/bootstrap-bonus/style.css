@@ -5,3 +5,21 @@
 .numero{
     opacity: 0.5;
 }
+
+.gros{
+    display:none;
+}
+
+.long{
+    display:block;
+}
+
+@media(min-width:100px){
+    .gros{
+        display:block;
+    }
+    
+    .long{
+        display:none;
+    }   
+}

@@ -3,11 +3,11 @@
       do{
         var question= prompt("choisissez votre mode de calcul");
         a= parseInt(prompt("choisissez nombre 1"));
-          if (a =null){
+          if (a ==null){
             beginning();
           }
         b=parseInt(prompt("choisissez nombre 2 "));
-          if (b =null){
+          if (b ==null){
             beginning();
         }
       }

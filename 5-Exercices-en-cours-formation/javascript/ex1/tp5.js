@@ -1,7 +1,7 @@
-let prenom = prompt("Comment vous appelez-vous?");
-
-while(prenom = 0){
+do {
     let prenom = prompt("Comment vous appelez-vous?");
-    break;
-}
+} while (prenom === "" || prenom === null);
+
+alert("sandy");
+
 

@@ -20,4 +20,13 @@ grostitre.textContent="Grand Titre";
 nav.prepend(grostitre); // placement avant:prepend
 
 document.querySelector("img").remove(); // supression d'un élément ici img.
-document.querySelector("img").src= //urel
+/*document.querySelector("img").src= "https://www.designconceptsolutions.fr/wp-content/uploads/slider/cache/a1dd83270ddcc193a96cda0e29f95963/mougins10.jpg";  
+// ajout d'une image*/
+
+
+
+
+/*var e = document.getElementById('logo');
+e.style.color = 'red';
+e.style.backgroundColor = 'yellow';
+e.style.fontSize = '12px';*/

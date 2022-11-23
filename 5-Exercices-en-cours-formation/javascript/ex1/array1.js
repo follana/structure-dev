@@ -25,9 +25,58 @@ let benjamin = {
 };
 
 
-function read(){
+/*function read(){
     console.table([formateur]);
     console.table([benjamin]);
 }
 
-read();
+read();*/
+
+console.log(typeof benjamin, typeof formateur);
+
+function read(array) {
+  console.log("fonction de ruben qui ne marche pas");
+  console.log(
+    Object.values(array).forEach((value) => console.log(value)) +
+      ":" +
+      Object.keys(array).forEach((value) => console.log(value))
+  );
+}
+
+read(formateur);
+read(benjamin);
+
+function showArray(array){
+  console.log("Deuxième tentative")
+  
+}
+
+//correction
+function readTab(tab) {
+  let data = "";
+  for (let index in tab) {
+    data += index + " : " + tab[index] + "\n";
+  }
+
+  console.log(data);
+}
+
+readTab(formateur);
+readTab(benjamin);
+
+function timer(){
+  let num = 0;
+  return function closure(){
+  ++num;
+  return num;
+  }
+  }
+let compteur = timer();
+console.log(compteur());
+console.log(compteur());
+console.log(compteur());
+console.log("***********************");
+let compteur2 = timer();
+console.log(compteur2());
+console.log(compteur2());
+console.log(timer());

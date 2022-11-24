@@ -20,11 +20,30 @@ let blabla =document.createElement("p");
 blabla.textContent="je n'ai rien à dire";
 section.append("blabla");
 
-bigTitle.addEventListener("click",function(){
+bigTitle.addEventListener("click",function(e){
     alert("Vous avez cliqué sur le titre")
+    e.stopPropagation();
 });
 
 section.addEventListener("click",function(){
     alert("Vous avez cliqué sur la section")
+});
+
+function randomColor(){
+    buttonSelector.style.background =
+    "rgb("+
+    Math.floor(Math.random()*256)+ ","+
+    Math.floor(Math.random()*256)+ ","+
+    Math.floor(Math.random()*256)+ ")";
+};
+
+buttonSelector.addEventListener("mouseenter", function(){
+    timer =setInterval (randomColor,2000);
+    });
+
+
+buttonSelector.addEventListener("mouseleave", function(){
+    clearInterval(timer);
+    buttonSelector.style.background = "#FFFFFF"
 });
 

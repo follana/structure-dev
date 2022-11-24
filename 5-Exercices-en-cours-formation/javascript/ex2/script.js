@@ -23,10 +23,23 @@ document.querySelector("img").remove(); // supression d'un élément ici img.
 /*document.querySelector("img").src= "https://www.designconceptsolutions.fr/wp-content/uploads/slider/cache/a1dd83270ddcc193a96cda0e29f95963/mougins10.jpg";  
 // ajout d'une image*/
 
+document.body.style.background= "linear-gradient(black,cyan, gold)";
 
+/*document.body.style.backgroundColor = "unset";
+document.body.style.color = "red";
+let bodySelector = document.querySelector("body");
+document.body.style.background = "linear-gradient(#f69d3c, #3f87a6)";
+document.body.classList.add("gradient-body");
 
+document.body.setAttribute("style", "background-color: red");
+document.body.setAttribute("style", "background-color: red; color: red");
+bodySelector.setAttribute("class", "gradient-body");
+// let imgSelector = document.querySelector("img");
 
-/*var e = document.getElementById('logo');
-e.style.color = 'red';
-e.style.backgroundColor = 'yellow';
-e.style.fontSize = '12px';*/
+// imgSelector.setAttribute("src", "img/quarate.jpg");
+// imgSelector.src = "https://pressegalactique.com/wp-content/uploads/2020/02/licorne.jpg";
+// //correction
+
+// document.querySelector("body").className = "gradientBody";
+// document.querySelector("h1").style.color = "#111d5e"; //il n'existe plus*/
+

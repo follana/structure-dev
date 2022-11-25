@@ -15,8 +15,10 @@ section{
     width:1000px;
     height:600px;
     border: dashed 5px blue;
-    /*margin-top: 150px;
-    margin-left: 400px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 button{
@@ -25,5 +27,20 @@ button{
     box-shadow: rgb(31, 30, 30) 0 5px ;
     padding: 25px;
     border-radius: 20px;
+    font-style: italic;
+    font-size: 30px;
+    color: darkgoldenrod;
 }
 
+
+.citation{
+    font-family: 'Satisfy', cursive;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.provenance{
+    font-family: 'Satisfy', cursive;
+    font-style: italic;
+    font-size: 20px; 
+}

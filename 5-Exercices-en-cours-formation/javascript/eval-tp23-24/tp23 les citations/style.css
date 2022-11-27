@@ -10,6 +10,7 @@ body{
     background: linear-gradient(to right,rgba(48,50,130,255),rgba(213,208,125,255) );
 }
 
+
 section{
     background-color: white;
     width:1000px;
@@ -19,7 +20,11 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+
 
 button{
     background-color:rgb(24, 5, 148);

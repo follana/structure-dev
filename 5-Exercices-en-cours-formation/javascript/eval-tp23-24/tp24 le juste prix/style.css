@@ -1,0 +1,36 @@
+
+
+body{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image:url(https://c0.lestechnophiles.com/www.madmoizelle.com/wp-content/uploads/2021/10/haunted-chocolatier-screenshot-1536x864.png?key=b48d8f29);
+}
+
+
+section{
+    background-color: white;
+    opacity: 75%;
+    width:600px;
+    height:500px;
+    border: dashed 5px blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5%;
+}
+
+
+.login-jeu{
+    
+
+}
+

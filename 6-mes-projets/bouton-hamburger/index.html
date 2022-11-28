@@ -8,28 +8,20 @@
     <title>bouton hamburger</title>
 </head>
 <body>
-   <button class="btn">
-        <div class="spin-container">
-            <div class="front">
-                <div class="bar b1"></div>
-                <div class="bar b2"></div>
-                <div class="bar b3"></div>
-            </div>
-            <div class="back">
-                <div class="bar b-back1"></div>
-                <div class="bar b-back2"></div>
-            </div>
+    <nav is="hamnav"></nav>
+        <!--Hamburger-->
+        <label for="hamburger">&#9776;</label>
+        <input type="ckeckbox" id="hamburger"/>
+
+        <!--menu items-->
+        <div id="hamitems">
+            <a href="#">First</a>
+            <a href="#">Second</a>
+            <a href="#">Third</a>
+            <a href="#">Forth</a>
+            <a href="#">Fifth</a>
         </div>
-   </button> 
-
-   <script>
-        const btn= document.querySelector('.btn');
-        const spinContainer = document.querySelector('.spin-container')
-
-        btn.addEventListener('clik', ()=>{
-            spinContainer.classList.toggle('active')
-        })
-   </script>
-    
+    </nav>
+ 
 </body>
 </html>

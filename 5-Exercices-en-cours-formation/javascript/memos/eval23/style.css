@@ -1,0 +1,72 @@
+/*
+    Color:
+    #303282 : #d5d07d
+
+    */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+:root{
+    --main-color: #303282;
+    --secondary-color: #d5d07d;
+    --citation-font:'Satisfy', cursive;
+}
+
+html {
+    background: linear-gradient(0.25turn, var(--main-color), var(--secondary-color) );
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section figure {    
+    background-color: white;
+    text-align: center;
+    min-width : 1000px;
+    min-height: 600px;
+    max-width: 1000px;
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border: 8px dashed var(--main-color);
+
+}
+
+section figure blockquote p:before{
+    content:"\275D";
+}
+
+section figure blockquote p:after{
+    content:"\275E";
+}
+
+section figure blockquote {
+    font-family: var(--citation-font);
+    font-size: 50px;
+    color: var(--main-color);
+    text-shadow: 2px 3px var(--secondary-color);
+}
+section figure figcaption{
+    font-size: 25px;
+    color: var(--main-color);
+    text-shadow: 2px 3px var(--secondary-color);
+    font-style: italic;
+}
+section button {
+    width: 400px;
+    height: 100px;
+    align-self: center;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    font-size: 40px;
+    border : none;
+    font-style: italic;
+    text-shadow: 2px 3px black;
+    box-shadow: 2px 5px 5px black;
+    border-radius: 20px;
+}

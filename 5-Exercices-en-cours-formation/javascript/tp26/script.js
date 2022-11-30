@@ -10,13 +10,13 @@ class Personnage {
 
     evoluer =() =>{
         this.niveau ++;
-        console.log(`"Le niveau du personnage est maintenant de"+" "+${this.niveau}`)
+        console.log(`"Le niveau du personnage est maintenant de"+${this.niveau}`)
     }
 
     verifierSante =() =>{
         if (this.sante >= 0){
             this.sante = 0;
-            console.log(`${this.pseudo}+" "+ "a perdu"`);
+            console.log(`${this.pseudo}+ "a perdu"`);
         }
     }
 
@@ -36,14 +36,14 @@ class Personnage {
     }
     attaquer =(personnage) =>{
         personnage.sante = personnage.sante -this.attaque;
-        console.log(`${this.pseudo}+" "+"attaque"+" "+${personnage.pseudo}+" "+"en lançant un sort" +(${this.attaque}`);
+        console.log(`${this.pseudo}+"attaque"+${personnage.pseudo}+"en lançant un sort" +(${this.attaque}`);
         this.evoluer();
         personnage.verifierSante();
     }
 
     coupSpecial =(personnage) =>{
         personnage.sante = personnage.sante -(this.attaque *5);
-        console.log(`${this.pseudo}+" "+"attaque"+" "+${personnage.pseudo}+" "+"en lançant un éclair mortel" +(${this.attaque}`);
+        console.log(`${this.pseudo}+"attaque"+" "+${personnage.pseudo}+"en lançant un éclair mortel" +(${this.attaque}`);
         this.evoluer();
         personnage.verifierSante();
     }
@@ -60,13 +60,13 @@ class Guerrier extends Personnage{
     }
     attaquer =(personnage) =>{
         personnage.sante = personnage.sante -this.attaque;
-        console.log(`${this.pseudo}+" "+"attaque"+" "+${personnage.pseudo}+" "+"en lançant un coup d'épee" +(${this.attaque}`);
+        console.log(`${this.pseudo}+"attaque"+${personnage.pseudo}+"en lançant un coup d'épee" +(${this.attaque}`);
         this.evoluer();
         personnage.verifierSante();
     }
     coupSpecial =(personnage) =>{
         personnage.sante = personnage.sante -(this.attaque *5);
-        console.log(`${this.pseudo}+" "+"attaque"+" "+${personnage.pseudo}+" "+"en frappant avec une hâche" +(${this.attaque}`);
+        console.log(`${this.pseudo}+"attaque"+${personnage.pseudo}+"en frappant avec une hâche" +(${this.attaque}`);
         this.evoluer();
         personnage.verifierSante();
     }

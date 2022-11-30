@@ -1,0 +1,29 @@
+css
+h1{
+    text-align: center;
+    font-size: 100px;
+    font-family: headingNow;
+}
+
+@font-face {
+    font-family: headingNow ;
+    src: url(./font/HeadingNowTrial-01Thin.ttf);
+}
+
+body{
+    margin: 0;
+    background: #f5f5f5;
+    font-family: "Heading";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section{
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+}
+

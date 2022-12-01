@@ -12,42 +12,33 @@ fetch('https://picsum.photos/v2/list?limit=2')
     return response.json()
   })
   .then((photos) => {
-    console.log(photos);
     photos.forEach(photo => {
+
       createElements();
-      fillElements(photo.download_url);
+      fillElements(photo.download_url, photo.author);
       appendElements();
+      readEvent(photo.url)  
     });
+    
   })
 
-  /*
-      <section>
-        <article>
-            <div>
-                <p>Alejandro Escamilla</p>
-                <button>Visiter</button>
-            </div>
-                <img src="">
-        </article>
-        <aside>
 
-        </aside>
-    </section>
-   */
 
 function createElements() {
-   sectionCreation = document.createElement("section");
-   articleCreation = document.createElement("article");
-   divCreation = document.createElement("div");
-   pIntegrate = document.createElement("p")
-   asideCreation = document.createElement("aside");
-   imgCreation = document.createElement("img");
-   buttonSelector = document.createElement("button");
+  sectionCreation = document.createElement("section");
+  articleCreation = document.createElement("article");
+  divCreation = document.createElement("div");
+  pIntegrate = document.createElement("p")
+  asideCreation = document.createElement("aside");
+  imgCreation = document.createElement("img");
+  buttonSelector = document.createElement("button");
 }
 
-function fillElements(photoUrl) {
+function fillElements(photoUrl, photoAuthor) {
   console.log("hello");
   imgCreation.src = photoUrl;
+  pIntegrate.textContent = photoAuthor;
+  buttonSelector.textContent = "Visit";
 }
 
 
@@ -61,8 +52,28 @@ function appendElements() {
   divCreation.append(buttonSelector);
 }
 
-function chooseAuthor(authorUrl){
-    console.log ("trouvez-moi");
-    pIntegrate.src= authorUrl;
+function readEvent(url) {
+  buttonSelector = document.querySelectorAll("button")
+
+  buttonSelector[buttonSelector.length - 1].addEventListener("click", function () {
+    location.href = url;
+  })
 }
 
+
+
+
+/*
+    <section>
+        <article>
+            <div>
+                <p>Alejandro Escamilla</p>
+                <button>Visiter</button>
+            </div>
+                <img src="https://picsum.photos/id/0/5000/3333">
+        </article>
+        <aside>
+
+        </aside>
+    </section>
+    */

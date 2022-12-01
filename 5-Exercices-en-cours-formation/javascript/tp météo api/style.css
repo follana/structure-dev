@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    background-image: url(https://media.istockphoto.com/id/961512098/fr/photo/fond-de-ciel-du-paradis-avec-gros-nuages.jpg?s=170667a&w=0&k=20&c=-zDnvm2cc9LlBOT-zPcH78Hdrayr7nJK_TlB6_dOYxg=);
+    background-size: cover;
+    margin: 0;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 450px;
+    width: 300px;
+    opacity: 70%;
+}
+
+h1{
+    font-size: 40px;
+    align-self: center;
+}
+
+label{
+    font-size: 30px;
+    align-self: center;
+    margin-bottom: 10px ;
+}
+
+input{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.reponse{
+    font-size: 20px;
+    align-self: center;
+}
+
+img{
+    align-self: center;
+}
+

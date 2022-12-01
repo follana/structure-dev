@@ -25,7 +25,7 @@ function fillElement(response){
 
     cityChoice.textContent= `ville de ${response.name}`;
     answerSpace.textContent=`La température est de ${(Math.round(response.main.temp))} degrés`;
-
+    iconItem.src=`http://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`;
 
 
 }

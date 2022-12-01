@@ -1,21 +1,32 @@
-let buttonSelector = document.querySelector(".envoyer");
-let entranceSpace = document.querySelector(".entrance");
-let answerSpace = document.querySelector(".reponse");
-let iconItem = document.querySelector("img");
 
+var buttonSelector = document.querySelector(".envoyer");
+var entranceSpace = document.querySelector(".entrance");
+var cityChoice =document.querySelector("H2")
+var answerSpace = document.querySelector(".reponse");
+var iconItem = document.querySelector("img"); 
 
-buttonSelector.addEventListener("Click", function () {
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=Montpellier&appid=91f40637a9cf837a5cee29d14c07e41b&units=metric')
+buttonSelector.addEventListener("click", function () {
+    let entranceSpace = document.querySelector(".entrance");
+    let searching = entranceSpace.value;
+    console.log("hello");
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searching}&appid=91f40637a9cf837a5cee29d14c07e41b&units=metric`)
     .then(response => {
-        return response.json()
+        return response.json();
     }).then(response => {
-        console.log(response)
+        console.log(response);
+        fillElement(response);
     }).catch(e=>{
-        console.log(`une erreur est survenue ${e}`);
+        console.log(`Vous êtes nul.le au petit bac avouez! ${e}`);
     })
 })
 
 
+function fillElement(response){
+    
+}
+
+cityChoice.textContent= `ville de +${response[main].name}`;
+answerSpace.textContent=`La température est de + ${(math.round(response[main].temp))}`;
 
 
 

@@ -4,20 +4,25 @@ body{
     background-size: cover;
     margin: 0;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 12%;
 }
 
 section{
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 450px;
+    height: 500px;
     width: 300px;
     opacity: 70%;
 }
 
 h1{
     font-size: 40px;
+    align-self: center;
+}
+
+H2{
+    font-size: 35px;
     align-self: center;
 }
 

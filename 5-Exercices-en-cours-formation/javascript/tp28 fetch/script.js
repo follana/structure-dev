@@ -1,4 +1,4 @@
-let bodySelector = document.querySelector("body");
+let mainSelector = document.querySelector("main");
 let sectionCreation;
 let articleCreation;
 let divCreation;
@@ -43,7 +43,7 @@ function fillElements(photoUrl, photoAuthor) {
 
 
 function appendElements() {
-  bodySelector.append(sectionCreation);
+  mainSelector.append(sectionCreation);
   sectionCreation.append(articleCreation);
   articleCreation.append(divCreation);
   sectionCreation.append(asideCreation);

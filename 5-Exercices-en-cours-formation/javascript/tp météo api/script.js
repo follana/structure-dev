@@ -24,7 +24,7 @@ function fillElement(response){
     var iconItem = document.querySelector("img"); 
 
     cityChoice.textContent= `ville de ${response.name}`;
-    answerSpace.textContent=`La température est de ${(Math.round(response.main.temp))}`;
+    answerSpace.textContent=`La température est de ${(Math.round(response.main.temp))} degrés`;
 
 
 

@@ -1,9 +1,6 @@
 
 var buttonSelector = document.querySelector(".envoyer");
-var entranceSpace = document.querySelector(".entrance");
-var cityChoice =document.querySelector("H2")
-var answerSpace = document.querySelector(".reponse");
-var iconItem = document.querySelector("img"); 
+
 
 buttonSelector.addEventListener("click", function () {
     let entranceSpace = document.querySelector(".entrance");
@@ -22,11 +19,18 @@ buttonSelector.addEventListener("click", function () {
 
 
 function fillElement(response){
-    
+    var cityChoice =document.querySelector("H2")
+    var answerSpace = document.querySelector(".reponse");
+    var iconItem = document.querySelector("img"); 
+
+    cityChoice.textContent= `ville de ${response.name}`;
+    answerSpace.textContent=`La température est de ${(Math.round(response.main.temp))}`;
+
+
+
 }
 
-cityChoice.textContent= `ville de +${response[main].name}`;
-answerSpace.textContent=`La température est de + ${(math.round(response[main].temp))}`;
+
 
 
 

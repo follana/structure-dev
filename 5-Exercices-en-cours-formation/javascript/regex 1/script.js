@@ -14,8 +14,8 @@ buttonSelector.addEventListener("click", function(){
         entranceSelector.setAttribute("style", "background-color: green");
     }
     else{
-        alert("login incorrect");
         entranceSelector.setAttribute("style", "background-color: red");
+        alert('login incorrect');
     }
 
     if(regexLimitPass.test(password)){
@@ -23,8 +23,8 @@ buttonSelector.addEventListener("click", function(){
         passwordSelector.setAttribute("style", "background-color: green");
     }
     else{
-        alert("votre pass ne respecte pas nos conditions");
         passwordSelector.setAttribute("style", "background-color: red");
+        alert('votre pass ne respecte pas nos conditions');
     }
 })
 

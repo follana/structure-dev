@@ -11,7 +11,10 @@ section{
     background-color: darkred;
     width:300px;
     height:300px;
+    margin-top: 12%;
     text-align: center;
+    border-radius: 15%;
+    box-shadow: black 2px 2px;
 }
 
 
@@ -21,6 +24,6 @@ label {
     
 }
 input{
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 20px;
 }

@@ -1,0 +1,63 @@
+header{
+
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+    font-family: headingNow;
+}
+
+main{
+    display: flex;
+}
+
+@font-face {
+    font-family: headingNow ;
+    src: url(./font/HeadingNowTrial-01Thin.ttf);
+}
+
+body{
+    margin: 0;
+    background: #b3b2b2;
+    font-family: "Heading";
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+section{
+    width: 425px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+    box-shadow: lightslategray 5px 5px;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-left: 17.5%;
+
+}
+
+button{
+    height: 30px;
+    width: 50px;
+    border:none;
+    background: linear-gradient(to right,#4f81e3,#63c0ed);
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 15%;
+}
+
+button:hover{
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+section:hover{
+    cursor: pointer;
+}
+
+p{
+    margin-top: 20px;
+    margin-left: 20px;
+}

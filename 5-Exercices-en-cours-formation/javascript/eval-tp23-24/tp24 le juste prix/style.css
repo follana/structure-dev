@@ -12,6 +12,11 @@ body{
     background-image:url(https://c0.lestechnophiles.com/www.madmoizelle.com/wp-content/uploads/2021/10/haunted-chocolatier-screenshot-1536x864.png?key=b48d8f29);
 }
 
+@font-face {
+	font-family: 'Metropolis';
+	src: url(‘/fonts/Metropolis-Bold.otf’) format(‘otf’),
+		url(‘/fonts/Metropolis-Bold.otf’) format(‘truetype’)
+}
 
 section{
     background-color: white;
@@ -26,7 +31,14 @@ section{
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 5%;
+    font-family: 'Metropolis', sans-serif;
 }
+
+.labelToClear{
+    font-size: 50px;
+}
+
+
 
 
 

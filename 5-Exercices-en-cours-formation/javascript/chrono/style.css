@@ -1,39 +1,36 @@
 body{
-    margin:0px;
-    padding:0px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin-left: 40%;
-    margin-top: 15% ;
-    background-image: url("https://www.shutterstock.com/image-photo/sand-running-through-bulbs-hourglass-260nw-766847608.jpg");
-    background-size: cover;
-}
-
-form{
-    height:100px;
-    width:500px;
-    background-color: azure;
-    display: flex;
-    flex-direction: row;
-}
-
-.button{
-    height:50px;
-    width:150px;
-    margin-left:15px;
-}
-
-header{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width:100vw;
     display:flex;
-    flex-direction: row
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
 
-h1{
-    margin-bottom: 50px;
-    font-size:70px;
+#wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white ;
+    height: 200px;
+    width:400px;
+    border-radius: 30px;
+    border-style: inset;
 }
 
-div{
+#chrono{
     font-size: 60px;
+}
+
+button{
+    height:40px;
+    width: 70px;
+    margin-top: 50px;
+    background: linear-gradient(#e66465, #9198e5);
 }

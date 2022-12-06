@@ -11,7 +11,7 @@ buttonSelector.forEach(button =>{
             html.id ="htmlOut";  
         }
         else if (button.id =="Css"){
-            Content("p", "Css", div,"déco"); 
+            Content("p", "Css", div,"deco"); 
             let css= document.getElementById("Css"); 
             css.id= "cssOut"  
         }
@@ -22,7 +22,7 @@ buttonSelector.forEach(button =>{
         }
         else if(button.id =="Tous"){
             Content("p", "Html", div,"page");
-            Content("p", "Css", div,"déco");
+            Content("p", "Css", div,"deco");
             Content("p", "Js", div,"anim");  
         }  
         
@@ -32,12 +32,14 @@ buttonSelector.forEach(button =>{
             htmlSelector.remove();
             let htmlOut = document.getElementById("htmlOut");
             htmlOut.id = "html";
+            
         } else if (button.id == "cssOut") {
             console.log("removed");
-            const htmlSelector = document.getElementById("déco");
+            const htmlSelector = document.getElementById("deco");
             htmlSelector.remove();
             let htmlOut = document.getElementById("cssOut");
             cssOut.id = "css";
+
         } else if (button.id == "jsOut") {
             console.log("removed");
             const htmlSelector = document.getElementById("anim");
@@ -50,9 +52,9 @@ buttonSelector.forEach(button =>{
 
 function Content(element_name, text, parent,ide){
     const blabla =document.createElement(element_name);
+    blabla.setAttribute("id",ide)
     blabla.textContent =text;
-    parent.appendChild(blabla);
-    
+    parent.appendChild(blabla);  
 }
 
 

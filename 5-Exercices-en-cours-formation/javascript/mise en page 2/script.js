@@ -52,7 +52,7 @@ buttonSelector.forEach(button =>{
 
 function Content(element_name, text, parent,ide){
     const blabla =document.createElement(element_name);
-    blabla.setAttribute("id",ide)
+    blabla.setAttribute("id",ide);
     blabla.textContent =text;
     parent.appendChild(blabla);  
 }

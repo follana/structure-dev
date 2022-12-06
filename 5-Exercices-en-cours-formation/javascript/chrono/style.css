@@ -1,0 +1,39 @@
+body{
+    margin:0px;
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 40%;
+    margin-top: 15% ;
+    background-image: url("https://www.shutterstock.com/image-photo/sand-running-through-bulbs-hourglass-260nw-766847608.jpg");
+    background-size: cover;
+}
+
+form{
+    height:100px;
+    width:500px;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+}
+
+.button{
+    height:50px;
+    width:150px;
+    margin-left:15px;
+}
+
+header{
+    display:flex;
+    flex-direction: row
+}
+
+h1{
+    margin-bottom: 50px;
+    font-size:70px;
+}
+
+div{
+    font-size: 60px;
+}

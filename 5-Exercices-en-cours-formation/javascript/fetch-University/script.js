@@ -9,11 +9,12 @@ button.addEventListener("click", async function(){
     let input= inputSelector.value;
     answer= await fetch(`http://universities.hipolabs.com/search?${input}=`);
     let universities =await answer.json()
+    console.log("data",universities)
     
     universities.forEach(school => {
-        if(){
+        // if(){
 
-        }
+        // }
     });
     
 

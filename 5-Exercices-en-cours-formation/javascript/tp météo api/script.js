@@ -5,7 +5,6 @@ var buttonSelector = document.querySelector(".envoyer");
 buttonSelector.addEventListener("click", function () {
     let entranceSpace = document.querySelector(".entrance");
     let searching = entranceSpace.value;
-    console.log("hello");
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searching}&appid=91f40637a9cf837a5cee29d14c07e41b&units=metric`)
     .then(response => {
         return response.json();

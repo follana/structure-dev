@@ -91,22 +91,4 @@ strong {
   cursor: pointer;
 }
 
-#formVoiture{
-  height:400px;
-  width: 400px;
-  display: flex;
-  flex-direction: row;
-}
-
-#namev{
-  height:400px;
-  width: 400px;
- margin-left: 50px;
-}
-
-#marque{
-  height:400px;
-  width: 400px;
-  
-}
 

@@ -1,5 +1,6 @@
 import logo from '../assets/logo.svg';
-import '../style/App.css';
+// import '../style/App.css';
+import '../style/deuxieme.css'
 // import Clock from './titre';
 // import Hello from './titre';
 // import Saluer from './titre';

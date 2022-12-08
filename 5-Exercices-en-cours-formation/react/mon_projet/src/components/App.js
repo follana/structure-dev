@@ -5,10 +5,11 @@ import '../style/App.css';
 // import Saluer from './titre';
 // import ChooseFruits from './titre';
 // import Goal from './titre';
-import HelloDear from './useState';
-import ClockMaster from './timer';
-import Button1 from './incrementUsesState';
-import {Toggle} from './toggle'
+// import HelloDear from './useState';
+// import ClockMaster from './timer';
+// import Button1 from './incrementUsesState';
+import {Toggle} from './toggle';
+import Garage from './voitures'
 
 
 function App() {
@@ -22,10 +23,11 @@ function App() {
         {/* <Saluer/> */}
         {/* <ChooseFruits/> */}
         {/* <Goal/> */}
-        <HelloDear/>
+        {/* <HelloDear/>
         <ClockMaster/>
-        <Button1/>
+        <Button1/> */}
         <Toggle/>
+        <Garage/>
         
         
         <a

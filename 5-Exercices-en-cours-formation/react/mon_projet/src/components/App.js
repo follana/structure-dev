@@ -8,6 +8,7 @@ import '../style/App.css';
 import HelloDear from './useState';
 import ClockMaster from './timer';
 import Button1 from './incrementUsesState';
+import {Toggle} from './toggle'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <HelloDear/>
         <ClockMaster/>
         <Button1/>
+        <Toggle/>
         
         
         <a

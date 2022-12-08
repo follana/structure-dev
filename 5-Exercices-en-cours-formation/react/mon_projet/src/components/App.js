@@ -4,7 +4,10 @@ import '../style/App.css';
 // import Hello from './titre';
 // import Saluer from './titre';
 // import ChooseFruits from './titre';
-import Goal from './titre'
+// import Goal from './titre';
+import HelloDear from './useState';
+import ClockMaster from './timer';
+import Button1 from './incrementUsesState';
 
 
 function App() {
@@ -18,6 +21,9 @@ function App() {
         {/* <Saluer/> */}
         {/* <ChooseFruits/> */}
         {/* <Goal/> */}
+        <HelloDear/>
+        <ClockMaster/>
+        <Button1/>
         
         
         <a

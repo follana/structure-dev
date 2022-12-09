@@ -10,7 +10,9 @@ import '../style/deuxieme.css'
 // import ClockMaster from './timer';
 // import Button1 from './incrementUsesState';
 import {Toggle} from './toggle';
-import Garage from './voitures'
+import Garage from './voitures';
+
+import TypesExample from './bootstrap1';
 
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
         <Button1/> */}
         <Toggle/>
         <Garage/>
+        <TypesExample/>
         
         
         <a

@@ -7,6 +7,7 @@ import ClockMaster from './clock';
 import Login from './login';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Routes, Route} from "react-router-dom";
+import Kanban from './kanban';
 
 
 
@@ -22,7 +23,7 @@ function App() {
           <Route path ="/boostrap" element={<TypesExample/>}/>
           <Route path ="/clock" element={<ClockMaster/>} />
           <Route path ="/calcul-calorique" element={<Balance/>} />
-        {/* <route path="/" element={</>} */}
+        * <Route path="/kanban" element={<Kanban/>} />
           
 
         </Routes>

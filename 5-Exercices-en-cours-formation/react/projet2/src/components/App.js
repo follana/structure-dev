@@ -1,4 +1,4 @@
-import logo from '../logo.svg';
+// import logo from '../logo.svg';
 import '../App.css';
 import TypesExample from './boostrap'
 import Header from './Header'

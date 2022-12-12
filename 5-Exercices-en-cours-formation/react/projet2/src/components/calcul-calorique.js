@@ -10,12 +10,6 @@ function Balance() {
     const [Gender, setGender] = useState();
     const [resultat, setResultat] = useState()
 
-    console.log(bougie)
-    console.log(taille)
-    console.log(kilos)
-    console.log(coeficient)
-    console.log(Gender)
-    console.log(resultat)
 
     const handleYear = (e) => {
         setBougie(e.target.value)
@@ -52,12 +46,8 @@ function Balance() {
         setGender(e.target.value)
     }
 
-
-
     return (<form class="balance-calorique" onSubmit={handleSubmit}>
         
-        
-
         <select name="gender" value="Gender" onChange= {handleGenre} /*aria-label="State"*/>
             <option value="homme">Homme</option>
             <option value="femme" >Femme</option>

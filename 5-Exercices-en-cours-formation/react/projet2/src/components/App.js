@@ -4,7 +4,7 @@ import TypesExample from './boostrap'
 import Header from './Header'
 import Balance from './calcul-calorique';
 import ClockMaster from './clock';
-
+import Login from './login';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Routes, Route} from "react-router-dom";
 
@@ -15,11 +15,15 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <Header/>
+        {localStorage.getItem('connecte') ? <Header /> : <Login />}
+        {/* {<Login/>} */}
+        {/* {<Header/>} */}
         <Routes>
-          <Route path ="/" element={<TypesExample/>}/>
+          <Route path ="/boostrap" element={<TypesExample/>}/>
           <Route path ="/clock" element={<ClockMaster/>} />
           <Route path ="/calcul-calorique" element={<Balance/>} />
+        {/* <route path="/" element={</>} */}
+          
 
         </Routes>
         {/* <a

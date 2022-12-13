@@ -1,0 +1,36 @@
+.tableau{
+height:400px;
+width:600px;
+background-color: rgb(125, 87, 196);
+display:flex;
+flex-direction: column;
+align-content: center;
+}
+
+
+.one{
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.two{
+  background-color: rgb(201, 161, 238);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: black;
+}
+
+
+.inserer{
+  background-color: blueviolet;
+  color:black;
+  width:100px;
+  height:50px;
+  margin-top: 20px;
+}
+
+
+

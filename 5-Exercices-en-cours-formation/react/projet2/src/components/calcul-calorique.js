@@ -77,7 +77,7 @@ function Balance() {
             <option value="2">Travail physique et 3h à 4h de sport, coef 2</option>
         </select>
 
-        <button type="submit" class="envoyer">Calculer</button>
+        <button type="submit" className="envoyer">Calculer</button>
 
         <h2>Votre résultat est de: {resultat}</h2>
     </form>)

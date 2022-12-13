@@ -23,7 +23,7 @@ function Login() {
             <h1>Se connecter</h1>
             <label name="login">Login :</label>
             <input value={login} onChange={(e) => setLogin(e.target.value)} />
-            <label name="mdp" class= "pswd">Mot de passe :</label>
+            <label name="mdp" className= "pswd">Mot de passe :</label>
             <input value={mdp} onChange={(e) => setMdp(e.target.value)} />
             <button>Connexion</button>
         </form>

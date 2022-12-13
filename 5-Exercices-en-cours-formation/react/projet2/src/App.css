@@ -68,3 +68,7 @@
 } 
 
 
+.linky:hover{
+  cursor:pointer;
+  background-color: gold;
+}

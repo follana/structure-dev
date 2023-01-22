@@ -34,6 +34,52 @@ $DB_PASS = "";
 
 $bdd = new PDO('mysql:host=localhost;dbname=' . $DB_NAME, $DB_USER, $DB_PASS, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
+// check if form was submitted
+if (isset($_POST['submit'])) {
+
+    $name = "";
+    $firstName = "";
+    $login ="";
+    $pass="";
+
+    if (isset($_POST['title'])){
+        $name = $_POST['title'];
+    }
+
+    if (isset($_POST['content'])){
+        $firstName = $_POST['content'];
+    }
+
+    if (isset($_POST['content'])){
+        $login = $_POST['content'];
+    }
+
+    if (isset($_POST['content'])){
+        $pass = $_POST['content'];
+    }
+
+
+    if (!empty($name) && !empty($firstName)&& !empty($login)&&!empty($pass)) {
+
+        $stmt = $bdd->prepare("INSERT INTO users (name_user, first_name_user, login_user, pass_user) VALUES (:name, :content , :login, :pass)");
+        $stmt->bindParam(':name', $name);
+        $stmt->bindParam(':content', $firstName);
+        $stmt->bindParam(':login', $login);
+        $stmt->bindParam(':pass', $pass);
+        $stmt->execute();
+
+        // message to confirm insertion
+        echo "New record created successfully";
+    }
+}
+
+$request = $bdd->prepare("SELECT name_user, first_name_user, login_user, pass_user FROM users");
+$request->execute();
+
+while($row = $request->fetch()) {
+    echo "name_user: " . $row["name_user"]. " - fisrt_name_user: " . $row["fisrt_name_user"]."login_user: " . $row["login_user"]."pass_user: " . $row["pass_user"]. "<br>";
+}
+
 
 
 ?>

@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #333;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    color: #fff;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .search-icon {
+    cursor: pointer;
+  }
+  
+  .search-bar {
+    display: none;
+  }
+  
+  .search-icon:hover + .search-bar {
+    display: block;
+  }

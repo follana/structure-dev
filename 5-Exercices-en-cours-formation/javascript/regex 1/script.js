@@ -1,4 +1,4 @@
-let entranceSelector =document.querySelector(".entrance");
+let entranceSelector =document.querySelector(".info");
 let passwordSelector =document.querySelector(".pass");
 let buttonSelector= document.querySelector(".button");
 const regexLimitPass=/^(?=.*\d)(?=.*[a-zA-Z])(?=.*[A-Z])(?=.*[-\#\$\.\%\&\*])(?=.*[a-zA-Z]).{6,8}$/ ;

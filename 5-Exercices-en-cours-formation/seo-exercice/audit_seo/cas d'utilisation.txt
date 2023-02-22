@@ -1,0 +1,20 @@
+ 	cas d'utilisation qui vous agace:
+
+la multitude de sous menus
+
+la prolifération de cookies
+
+les publicités invasives
+
+
+	5 sources de ralentissement / solution:
+
+vidéo / abaisser la qualité ou bloquer le lancement automatique
+
+images /privilégier une extension plus légère
+
+polices / privilégier des polices plus légères
+
+fichiers js / supprimer les espaces
+
+fichier css / supprimer les espaces
